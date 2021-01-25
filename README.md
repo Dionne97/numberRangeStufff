@@ -9,6 +9,6 @@ Written by:
 ### Compiling the project
 mvn package
 
-### Running tests
+#### Running tests
 mvn test
 

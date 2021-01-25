@@ -31,6 +31,15 @@ public class AppTest
     }
 
     @Test
+   public void checkifSummarised() {
+       String input = "1,3,6,7,8,12,13,14,15,21,22,23,24,31";
+       Numbers data = new Numbers();
+       Collection<Integer> fixedData = data.collect(input);
+       String ranges = data.summarizeCollection(fixedData);
+       assertTrue(compareLengths(input, ranges));
+    }
+
+    @Test
    public void checkBiggerNumbers() {
        String input = "1000,122,543666,7,8,12,13,14,15,21,22,23,24,31";
        Numbers data = new Numbers();
