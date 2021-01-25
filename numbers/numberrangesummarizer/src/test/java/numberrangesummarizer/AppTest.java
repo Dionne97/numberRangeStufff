@@ -7,18 +7,11 @@ import java.util.Collection;
 import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * Unit test for NumberRangeSummariser.
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue( true );
-    } 
-
+   
     @Test
     public void checkData() {
         String input = "31,1,24,2,3,4";
@@ -43,7 +36,6 @@ public class AppTest
        Numbers data = new Numbers();
        Collection<Integer> fixedData = data.collect(input);
        String ranges = data.summarizeCollection(fixedData);
-       System.out.println(ranges);
        assertTrue(compareLengths(input, ranges));
     }
 
@@ -55,6 +47,28 @@ public class AppTest
        String ranges = data.summarizeCollection(fixedData);
 
        assertFalse(compareLengths(input, ranges));
+    }
+
+    @Test
+    public void checkSummarisedOutput() {
+       String input = "12,1,13,14,15";
+       Numbers data = new Numbers();
+       Collection<Integer> fixedData = data.collect(input);
+       String ranges = data.summarizeCollection(fixedData);
+       System.out.println(ranges);
+       String expected_output = "1,12-15";
+
+       assertTrue(ranges.equals(expected_output));
+    }
+
+    @Test
+    public void checkSummarisedOutputofBigNumbers() {
+       String input = "1200,11234,13001,13002,13003, 10000000";
+       Numbers data = new Numbers();
+       Collection<Integer> fixedData = data.collect(input);
+       String ranges = data.summarizeCollection(fixedData);
+       String expected_output = "1200,11234,13001-13003,10000000";
+       assertTrue(ranges.equals(expected_output));
     }
 
     public static boolean compareLengths(String in , String out) {

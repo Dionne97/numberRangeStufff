@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="numberrangesummarizer.AppTest" time="0.069" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="numberrangesummarizer.AppTest" time="0.035" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ZA"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/dionne/Desktop/technical assessments/numberRangeStufff/numbers/numberrangesummarizer/target/surefire/surefirebooter17875835722106240078.jar /home/dionne/Desktop/technical assessments/numberRangeStufff/numbers/numberrangesummarizer/target/surefire 2021-01-24T21-05-17_423-jvmRun1 surefire6419402033087818050tmp surefire_02084626080341001817tmp"/>
+    <property name="sun.java.command" value="/home/dionne/Desktop/technical assessments/numberRangeStufff/numbers/numberrangesummarizer/target/surefire/surefirebooter3190249130773510996.jar /home/dionne/Desktop/technical assessments/numberRangeStufff/numbers/numberrangesummarizer/target/surefire 2021-01-25T11-52-21_159-jvmRun1 surefire578293168115118077tmp surefire_013903791794853329174tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/dionne/Desktop/technical assessments/numberRangeStufff/numbers/numberrangesummarizer/target/test-classes:/home/dionne/Desktop/technical assessments/numberRangeStufff/numbers/numberrangesummarizer/target/classes:/home/dionne/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/dionne/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/dionne/Desktop/technical assessments/numberRangeStufff/numbers/numberrangesummarizer/target/surefire/surefirebooter17875835722106240078.jar"/>
+    <property name="surefire.real.class.path" value="/home/dionne/Desktop/technical assessments/numberRangeStufff/numbers/numberrangesummarizer/target/surefire/surefirebooter3190249130773510996.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.7+10-post-Ubuntu-2ubuntu219.10"/>
     <property name="user.name" value="dionne"/>
@@ -57,9 +57,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="numberrangesummarizer.AppTest" time="0.005"/>
-  <testcase name="checkifNotSummarised" classname="numberrangesummarizer.AppTest" time="0.013"/>
-  <testcase name="checkData" classname="numberrangesummarizer.AppTest" time="0.004"/>
-  <testcase name="checkifSummarised" classname="numberrangesummarizer.AppTest" time="0.003"/>
-  <testcase name="checkBiggerNumbers" classname="numberrangesummarizer.AppTest" time="0.002"/>
+  <testcase name="shouldAnswerWithTrue" classname="numberrangesummarizer.AppTest" time="0.001"/>
+  <testcase name="checkSummarisedOutputofBigNumbers" classname="numberrangesummarizer.AppTest" time="0.005"/>
+  <testcase name="checkifNotSummarised" classname="numberrangesummarizer.AppTest" time="0"/>
+  <testcase name="checkSummarisedOutput" classname="numberrangesummarizer.AppTest" time="0"/>
+  <testcase name="checkData" classname="numberrangesummarizer.AppTest" time="0"/>
+  <testcase name="checkifSummarised" classname="numberrangesummarizer.AppTest" time="0"/>
+  <testcase name="checkBiggerNumbers" classname="numberrangesummarizer.AppTest" time="0"/>
 </testsuite>
